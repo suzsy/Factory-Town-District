@@ -136,131 +136,8 @@
             line-height: 1.6;
         }
 
-        .contact-container {
-            width: 100%;
-            max-width: 1200px;
-            margin: 3rem auto;
-            padding: 0 1rem;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background-color: #000000;
-        }
 
-        .contact-box {
-            width: 80%;
-            max-width: 600px;
-            padding: 2rem;
-            margin: 2rem;
-            background-color: rgba(255, 255, 255, 0.05);
-            border-radius: 8px;
-            color: #ffffff;
-        }
-
-        .contact-box h2 {
-            font-size: 2rem;
-            font-weight: 300;
-            letter-spacing: 0.1em;
-            margin-bottom: 1.5rem;
-            color: #ffffff;
-            text-align: center;
-        }
-
-        .contact-form {
-            display: flex;
-            flex-direction: column;
-            gap: 1.5rem;
-        }
-
-        .form-group {
-            display: flex;
-            flex-direction: column;
-        }
-
-        .form-group label {
-            margin-bottom: 0.5rem;
-            font-size: 0.9rem;
-            color: #ffffff;
-        }
-
-        .form-group input,
-        .form-group textarea {
-            padding: 0.75rem;
-            background-color: rgba(255, 255, 255, 0.1);
-            border: 1px solid rgba(255, 255, 255, 0.2);
-            border-radius: 4px;
-            color: #ffffff;
-            font-family: inherit;
-            font-size: 1rem;
-            transition: border-color 0.3s ease;
-        }
-
-        .form-group input:focus,
-        .form-group textarea:focus {
-            outline: none;
-            border-color: rgba(255, 255, 255, 0.5);
-        }
-
-        .form-group input::placeholder,
-        .form-group textarea::placeholder {
-            color: rgba(255, 255, 255, 0.5);
-        }
-
-        .form-group textarea {
-            min-height: 150px;
-            resize: vertical;
-        }
-
-        .submit-btn {
-            padding: 0.75rem 2rem;
-            background-color: rgba(255, 255, 255, 0.1);
-            border: 1px solid rgba(255, 255, 255, 0.3);
-            border-radius: 4px;
-            color: #ffffff;
-            font-size: 1rem;
-            font-family: inherit;
-            cursor: pointer;
-            transition: background-color 0.3s ease, border-color 0.3s ease;
-        }
-
-        .submit-btn:hover {
-            background-color: rgba(255, 255, 255, 0.15);
-            border-color: rgba(255, 255, 255, 0.5);
-        }
-
-        .submit-btn:active {
-            background-color: rgba(255, 255, 255, 0.2);
-        }
-
-        @media (max-width: 768px) {
-            h1 {
-                font-size: 2rem;
-                letter-spacing: 0.1em;
-            }
-
-            .textbox {
-                width: 90%;
-                padding: 1.5rem;
-                font-size: 0.9rem;
-            }
-
-            .image-container {
-                margin: 2rem auto;
-            }
-
-            .contact-box {
-                width: 90%;
-                padding: 1.5rem;
-            }
-
-            .contact-box h2 {
-                font-size: 1.5rem;
-            }
-
-            .contact-form {
-                gap: 1.25rem;
-            }
-        }
+        
     </style>
 </head>
 <body>
@@ -276,41 +153,15 @@
     
     <div class="textbox-container">
         <div class="textbox">
-            <p>Factory Town District includes the Factory Town Entertainment Subdistrict Pilot Program, Hialeah, Zoned M-1 (Industrial District). For details, see The City of Hialeah Ordinance No.2020-011. Factory Town currently operates as an entertainment venue hosting music festivals and events multiple times a year. The broader district is in the planning and development phase, with proposed projects including Factory Town Garage, a 638-stall parking facility, and Factory Living, a 235-unit residential building.
+            <p>We are an experienced real estate developer specializing in the planning, acquisition, and development of mixed-use, hospitality, retail, residential, and commercial projects. We manage the full development cycle, including site selection, master planning, financing, design coordination, construction oversight, and long-term asset strategy.
+
+            Our work is rooted in placemaking, with a focus on creating well-designed properties that strengthen communities and support sustainable growth. We collaborate with architects, designers, local partners, civic organizations, and investors to ensure each project reflects its surrounding context.
+
+            We are currently evaluating joint-venture and co-development opportunities across hospitality, retail, residential, and other commercial sectors. For partnership or investment inquiries, contact us at factorytowndistrict@gmail.com.
             </p>
             
-            <p>The purpose of Factory Town District is to create a mixed-used development that will leverage the Factory Town venue in creating a new neighborhood in a designated Transit-Oriented Development district. The City of Hialeah recently approved a <a href="https://www.dropbox.com/scl/fi/bej86xueyxasxlw7qxe01/Zoning-Variance-for-FT-Garage.pdf?rlkey=vz21wtre5y0cyri3t1b2veinc&st=1w40s4ig&dl=0" target="_blank">zoning variance</a> change for the Factory Town Garage project to further establish the district. </p>
         </div>
     </div>
     
-    <div class="image-container">
-        <img src="FT District Base Map.png" alt="Factory Town District Map">
-    </div>
-
-    <div class="image-container">
-        <img src="FT Garage.png" alt="Factory Town Project">
-        <p class="image-description">Planned Factory Town Garage</p>
-    </div>
-
-    <div class="contact-container">
-        <div class="contact-box">
-            <h2>Contact</h2>
-            <form class="contact-form" action="https://formspree.io/f/xeopbljb" method="POST">
-                <div class="form-group">
-                    <label for="name">Name</label>
-                    <input type="text" id="name" name="name" placeholder="Your name" required>
-                </div>
-                <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" placeholder="your.email@example.com" required>
-                </div>
-                <div class="form-group">
-                    <label for="message">Message</label>
-                    <textarea id="message" name="message" placeholder="Your message here..." required></textarea>
-                </div>
-                <button type="submit" class="submit-btn">Send Message</button>
-            </form>
-        </div>
-    </div>
 </body>
 </html>
